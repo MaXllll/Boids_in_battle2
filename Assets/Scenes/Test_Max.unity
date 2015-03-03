@@ -909,7 +909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5cf730fefc831429df4cdf850a4401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
+  _camera: {fileID: 377702205}
   _layer_mask:
     serializedVersion: 2
     m_Bits: 0

@@ -128,8 +128,11 @@ public class SC_boid : MonoBehaviour {
 		if (_i_hp <= 0)
 		{
 			_b_is_dead = true;
-			if (_T_graphic != null)
-				Destroy(_T_graphic.gameObject);
+
+			_animator.SetBool("Die", true);
+
+			/*if (_T_graphic != null)
+				Destroy(_T_graphic.gameObject);*/
 			return true;
 		}
 		return false;
