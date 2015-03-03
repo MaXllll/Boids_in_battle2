@@ -1,0 +1,891 @@
+fileFormatVersion: 2
+guid: bb900b21cee6b47bca3989a044f2fab3
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Camera
+    100002: //RootNode
+    100004: Head
+    100006: Head_end
+    100008: Hips
+    100010: Lamp
+    100012: LeftArm
+    100014: LeftFoot
+    100016: LeftForeArm
+    100018: LeftHand
+    100020: LeftHand_end
+    100022: LeftLeg
+    100024: LeftShoulder
+    100026: LeftToeBase
+    100028: LeftToeBase_end
+    100030: LeftUpLeg
+    100032: Male2_G2_FrontKick
+    100034: Neck
+    100036: RightArm
+    100038: RightFoot
+    100040: RightForeArm
+    100042: RightHand
+    100044: RightHand_end
+    100046: RightLeg
+    100048: RightShoulder
+    100050: RightToeBase
+    100052: RightToeBase_end
+    100054: RightUpLeg
+    100056: Spine
+    100058: Spine1
+    100060: ToSpine
+    400000: Camera
+    400002: //RootNode
+    400004: Head
+    400006: Head_end
+    400008: Hips
+    400010: Lamp
+    400012: LeftArm
+    400014: LeftFoot
+    400016: LeftForeArm
+    400018: LeftHand
+    400020: LeftHand_end
+    400022: LeftLeg
+    400024: LeftShoulder
+    400026: LeftToeBase
+    400028: LeftToeBase_end
+    400030: LeftUpLeg
+    400032: Male2_G2_FrontKick
+    400034: Neck
+    400036: RightArm
+    400038: RightFoot
+    400040: RightForeArm
+    400042: RightHand
+    400044: RightHand_end
+    400046: RightLeg
+    400048: RightShoulder
+    400050: RightToeBase
+    400052: RightToeBase_end
+    400054: RightUpLeg
+    400056: Spine
+    400058: Spine1
+    400060: ToSpine
+    7400000: Male2_G2_FrontKick|Female1_A01_Stand
+    7400002: Male2_G2_FrontKick|Female1_A11_CrawlForward
+    7400004: Male2_G2_FrontKick|Male1_C24_QuickSideStepLeft
+    7400006: Male2_G2_FrontKick|Male2_G2_FrontKick
+    7400008: Male2_G2_FrontKick|Male2_G7_Capoeira
+    7400010: Male2_G2_FrontKick|Male2_G2_FrontKick0
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Male2_G2_FrontKick|Male2_G2_FrontKick0
+      takeName: Male2_G2_FrontKick|Male2_G2_FrontKick
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 0
+      - path: Lamp
+        weight: 0
+      - path: Male2_G2_FrontKick
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head/Head_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Male2_G2_FrontKick|Female1_A11_CrawlForward
+      takeName: Male2_G2_FrontKick|Female1_A11_CrawlForward
+      firstFrame: 0
+      lastFrame: 600
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 0
+      - path: Lamp
+        weight: 0
+      - path: Male2_G2_FrontKick
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head/Head_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Male2_G2_FrontKick|Male1_C24_QuickSideStepLeft
+      takeName: Male2_G2_FrontKick|Male1_C24_QuickSideStepLeft
+      firstFrame: 0
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 0
+      - path: Lamp
+        weight: 0
+      - path: Male2_G2_FrontKick
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head/Head_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Male2_G2_FrontKick|Male2_G2_FrontKick
+      takeName: Male2_G2_FrontKick|Male2_G2_FrontKick
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 0
+      - path: Lamp
+        weight: 0
+      - path: Male2_G2_FrontKick
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head/Head_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Male2_G2_FrontKick|Male2_G7_Capoeira
+      takeName: Male2_G2_FrontKick|Male2_G7_Capoeira
+      firstFrame: 0
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 0
+      - path: Lamp
+        weight: 0
+      - path: Male2_G2_FrontKick
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/LeftUpLeg/LeftLeg/LeftFoot/LeftToeBase/LeftToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/RightUpLeg/RightLeg/RightFoot/RightToeBase/RightToeBase_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHand_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/Neck/Head/Head_end
+        weight: 0
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand
+        weight: 1
+      - path: Male2_G2_FrontKick/Hips/ToSpine/Spine/Spine1/RightShoulder/RightArm/RightForeArm/RightHand/RightHand_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: front_kick(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Camera
+      position: {x: .074811317, y: .0534366518, z: -.0650763959}
+      rotation: {x: -.210611373, y: .905240119, z: .0892816633, w: -.358066946}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Lamp
+      position: {x: .0407624505, y: .0590386204, z: .010054539}
+      rotation: {x: .755880356, y: -.169075564, z: -.570947587, w: -.272171289}
+      scale: {x: .99999994, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: Male2_G2_FrontKick
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -4.32977997e-17, y: .707106709, z: .707106829, w: -4.32978063e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hips
+      position: {x: -.00166845322, y: -.00587873859, z: .938476622}
+      rotation: {x: -.643969774, y: -.337320566, z: .583281338, w: .362354398}
+      scale: {x: .999999881, y: 1, z: .999999881}
+      transformModified: 1
+    - name: LeftUpLeg
+      position: {x: .0346438773, y: .0371174142, z: -.102630191}
+      rotation: {x: -.321199417, y: -.756930828, z: -.123747796, w: .555493653}
+      scale: {x: 1.00000012, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: LeftLeg
+      position: {x: -3.33786012e-08, y: .428931594, z: -1.6093253e-08}
+      rotation: {x: .128273487, y: -.45426625, z: -.292867482, w: .831514776}
+      scale: {x: 1, y: .999999881, z: 1.00000012}
+      transformModified: 1
+    - name: LeftFoot
+      position: {x: 4.52995295e-08, y: .428286284, z: -2.38418565e-08}
+      rotation: {x: -.513209581, y: .469483465, z: .483595699, w: .531353354}
+      scale: {x: .999999702, y: .999999881, z: .999999762}
+      transformModified: 1
+    - name: LeftToeBase
+      position: {x: 1.15484e-09, y: .141530573, z: -1.6093253e-08}
+      rotation: {x: -.205222756, y: -.0182866063, z: .0572250225, w: .976869762}
+      scale: {x: .999999702, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: LeftToeBase_end
+      position: {x: -0, y: .0530673973, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightUpLeg
+      position: {x: .0274073221, y: .0446260907, z: .105975732}
+      rotation: {x: -.149446756, y: -.637052596, z: -.337318718, w: .676790774}
+      scale: {x: .999999642, y: .999999642, z: .999999583}
+      transformModified: 1
+    - name: RightLeg
+      position: {x: 7.15255721e-09, y: .428570956, z: 2.86102289e-08}
+      rotation: {x: .169480175, y: .413787663, z: .291862637, w: .845501244}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: RightFoot
+      position: {x: 1.19209282e-08, y: .428565919, z: 6.55651107e-08}
+      rotation: {x: -.533645928, y: -.424454004, z: -.453224063, w: .574150503}
+      scale: {x: .999999821, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: RightToeBase
+      position: {x: 2.10851425e-08, y: .141980767, z: 1.46031374e-08}
+      rotation: {x: -.213104323, y: -.118983097, z: -.16155684, w: .956205487}
+      scale: {x: .999999821, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: RightToeBase_end
+      position: {x: -0, y: .0530666672, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ToSpine
+      position: {x: -.0620510466, y: .0488777421, z: -.00334547739}
+      rotation: {x: .67360568, y: -.159844756, z: .699076295, w: .178878292}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Spine
+      position: {x: -1.847744e-08, y: .109383382, z: -2.86102289e-08}
+      rotation: {x: .0777206197, y: -.591499448, z: .00910944492, w: .802499175}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Spine1
+      position: {x: -4.52995295e-08, y: .13597551, z: 2.86102289e-08}
+      rotation: {x: -.0501393527, y: -.154940829, z: .0110622458, w: .986588597}
+      scale: {x: 1.00000012, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: LeftShoulder
+      position: {x: -.00707944855, y: .279816717, z: .0256986488}
+      rotation: {x: .555578053, y: -.320162922, z: -.556407154, w: .528431475}
+      scale: {x: 1.00000024, y: .99999994, z: 1.00000012}
+      transformModified: 1
+    - name: LeftArm
+      position: {x: -2.19345083e-07, y: .201847151, z: -2.86102289e-08}
+      rotation: {x: -.0990480259, y: .988840342, z: .0766464248, w: .0806821659}
+      scale: {x: 1.00000012, y: .999999762, z: 1.00000012}
+      transformModified: 1
+    - name: LeftForeArm
+      position: {x: -0, y: .268060446, z: 9.53674295e-09}
+      rotation: {x: -.00398477819, y: -.154640883, z: -.00317841, w: .987957597}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: LeftHand
+      position: {x: -7.95721959e-08, y: .266836256, z: 4.29153424e-08}
+      rotation: {x: .001077689, y: -.00432079844, z: -.00369116035, w: .999983311}
+      scale: {x: .999999881, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: LeftHand_end
+      position: {x: -0, y: .18615824, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck
+      position: {x: .0164451208, y: .308348924, z: -.000153779984}
+      rotation: {x: .17058453, y: .898827195, z: -.00433254149, w: -.403722465}
+      scale: {x: 1.00000024, y: .999999881, z: 1.00000012}
+      transformModified: 1
+    - name: Head
+      position: {x: 1.90734859e-08, y: .0957522541, z: 1.90734859e-08}
+      rotation: {x: -.0123615554, y: -.823781252, z: -.170775309, w: .540432632}
+      scale: {x: .999999881, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Head_end
+      position: {x: -0, y: .166455895, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightShoulder
+      position: {x: -.00936552044, y: .279859483, z: -.0255449861}
+      rotation: {x: .628045261, y: -.343294531, z: .474838257, w: -.512090564}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: RightArm
+      position: {x: 3.07559958e-07, y: .190059125, z: 3.81469718e-08}
+      rotation: {x: -.115254447, y: .912904441, z: .0547129326, w: .387722045}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RightForeArm
+      position: {x: 9.5367426e-08, y: .288650423, z: 3.81469718e-08}
+      rotation: {x: -.0210204367, y: .136546835, z: -.0284280106, w: .990002513}
+      scale: {x: .999999583, y: .999999762, z: .999999821}
+      transformModified: 1
+    - name: RightHand
+      position: {x: 4.52995295e-08, y: .265115827, z: 7.15255695e-08}
+      rotation: {x: .00136719993, y: -.00191185717, z: -.00511778565, w: .999984145}
+      scale: {x: .999999642, y: .999999702, z: .999999762}
+      transformModified: 1
+    - name: RightHand_end
+      position: {x: -0, y: .182168037, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 

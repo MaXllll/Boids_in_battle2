@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &102190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 402190}
+  - 114: {fileID: 11402190}
+  m_Layer: 0
+  m_Name: Manager Team2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &402190
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -120.900002, y: 1.89999998, z: -154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11402190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984d08bd6d919014da27bf0a68856aab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _i_nb_boids: 250
+  _Prefab_boid: {fileID: 178830, guid: 5137131023e3e83408c0d65de46fdfb9, type: 2}
+  _team_enemy: {fileID: 0}
+  _f_x_range: 75
+  _f_y_range: 125
+  _f_distance_aggro: 5
+  _f_distance_separation: 9
+  _f_factor_separation: 3
+  _f_distance_alignment: 6
+  _f_factor_alignment: 2
+  _f_distance_aggregation: 9
+  _f_factor_aggregation: 2
+  _V3_destination: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 102190}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
