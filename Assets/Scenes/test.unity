@@ -909,13 +909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e5046dd53fc4fe08a8f42e7c55e969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 0
-  sensitivityX: 15
-  sensitivityY: 15
-  minimumX: -360
-  maximumX: 360
-  minimumY: -60
-  maximumY: 60
 --- !u!114 &377702201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,7 +920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa6f35c577b144b795d73fd31f8a39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
 --- !u!81 &377702202
 AudioListener:
   m_ObjectHideFlags: 0
