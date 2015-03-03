@@ -906,9 +906,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 377702199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8e5046dd53fc4fe08a8f42e7c55e969, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e5cf730fefc831429df4cdf850a4401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
+  _layer_mask:
+    serializedVersion: 2
+    m_Bits: 0
+  _boids_team: {fileID: 0}
 --- !u!114 &377702201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,9 +922,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 377702199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aa6f35c577b144b795d73fd31f8a39b, type: 3}
+  m_Script: {fileID: 11500000, guid: c71583ef982a141189142cebe3ca56bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  axes: 0
+  sensitivityX: 15
+  sensitivityY: 15
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
 --- !u!81 &377702202
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3360,12 +3372,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _i_nb_boids: 150
   _Prefab_boid:
-  - {fileID: 100018, guid: 1c72e43406c14442ca060f939112bb27, type: 2}
-  - {fileID: 100000, guid: 1f58e2098372b41598cc7ba2df49b939, type: 2}
-  - {fileID: 100000, guid: c56c312e93c6e453288a79c7567d75e8, type: 2}
-  - {fileID: 100018, guid: 03a1bdbf89bcc4f3e874672c16ca00a8, type: 2}
-  - {fileID: 100018, guid: 9adcd339e9aea46c2b512ce6827d617c, type: 2}
-  - {fileID: 100018, guid: 28cf4ca35a6a045069462bb423cca39f, type: 2}
+  - {fileID: 173350, guid: 547b1a000ddb94a02ae27b987b8f2ebe, type: 2}
+  - {fileID: 184748, guid: 1f58e2098372b41598cc7ba2df49b939, type: 2}
+  - {fileID: 110242, guid: c56c312e93c6e453288a79c7567d75e8, type: 2}
+  - {fileID: 156088, guid: 03a1bdbf89bcc4f3e874672c16ca00a8, type: 2}
+  - {fileID: 197316, guid: 44951a104398b4214b49ca73d3bccc6d, type: 2}
+  - {fileID: 171936, guid: 388cb08a844c440d7ab488fb48bbd225, type: 2}
   _team_enemy: {fileID: 1950639596}
   _f_x_range: 125
   _f_y_range: 50
@@ -4304,7 +4316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _i_nb_boids: 150
   _Prefab_boid:
-  - {fileID: 100018, guid: 313bf72ca23cd4ad19027bf715dc2122, type: 2}
+  - {fileID: 174858, guid: 313bf72ca23cd4ad19027bf715dc2122, type: 2}
   _team_enemy: {fileID: 1387632379}
   _f_x_range: 100
   _f_y_range: 75
@@ -4323,7 +4335,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950639595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.39999998, y: 0, z: -3.9000001}
+  m_LocalPosition: {x: 77, y: 0, z: 17.7000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
