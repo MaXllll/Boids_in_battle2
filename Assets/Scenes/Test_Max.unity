@@ -8671,7 +8671,7 @@ LODGroup:
   m_Size: 1.82749319
   m_ScreenRelativeTransitionHeight: 0
   m_LODs:
-  - screenRelativeHeight: .600000024
+  - screenRelativeHeight: .339112103
     renderers:
     - renderer: {fileID: 1955203757}
     - renderer: {fileID: 330757335}
@@ -8680,7 +8680,7 @@ LODGroup:
     - renderer: {fileID: 733538336}
     - renderer: {fileID: 1156418045}
     - renderer: {fileID: 1185591681}
-  - screenRelativeHeight: .300000012
+  - screenRelativeHeight: .0870114565
     renderers:
     - renderer: {fileID: 1264868976}
     - renderer: {fileID: 1453966779}
@@ -8689,7 +8689,7 @@ LODGroup:
     - renderer: {fileID: 643150374}
     - renderer: {fileID: 891407349}
     - renderer: {fileID: 453314314}
-  - screenRelativeHeight: .100000001
+  - screenRelativeHeight: .00827263389
     renderers:
     - renderer: {fileID: 1428981601}
     - renderer: {fileID: 764925553}
