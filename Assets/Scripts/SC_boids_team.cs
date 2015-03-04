@@ -84,86 +84,86 @@ public class SC_boids_team : MonoBehaviour {
 	{
 		for (int i = 0; i < _boids.Length; ++i)
 		{
-			if (!_boids[i]._V3_thread_have_boid_target && !_boids[i]._b_is_dead)
+			if (!_boids[i]._b_is_dead)
 			{
-				for (int j = 0; j < _team_enemy._i_nb_boids; ++j)
-				{
-					if (!_team_enemy._boids[j]._V3_thread_have_boid_target && !_team_enemy._boids[j]._b_is_dead)
-					{
-						float f_distance = Vector3.Distance(_boids[i]._V3_thread_position, _team_enemy._boids[j]._V3_thread_position);
-						if (f_distance < _f_distance_aggro)
-						{
-							_boids[i]._boid_target = _team_enemy._boids[j];
-							_team_enemy._boids[j]._boid_target = _boids[i];
-
-							_boids[i]._V3_thread_have_boid_target = true;
-							_team_enemy._boids[j]._V3_thread_have_boid_target = true;
-						}
-					}
-				}
-
 				if (!_boids[i]._V3_thread_have_boid_target)
 				{
-					Vector3 V3_target_separation = Vector3.zero;
-					Vector3 V3_target_alignment = Vector3.zero;
-					Vector3 V3_target_aggregation = Vector3.zero;
-
-					int i_nb_near_boids_separation = 0;
-					int i_nb_near_boids_alignment = 0;
-					int i_nb_near_boids_aggregation = 0;
-
-					for (int j = 0; j < _i_nb_boids; ++j)
+					for (int j = 0; j < _team_enemy._i_nb_boids; ++j)
 					{
-						float f_distance = Vector3.Distance(_boids[i]._V3_thread_position, _boids[j]._V3_thread_position);
+						if (!_team_enemy._boids[j]._V3_thread_have_boid_target && !_team_enemy._boids[j]._b_is_dead)
+						{
+							float f_distance = Vector3.Distance(_boids[i]._V3_thread_position, _team_enemy._boids[j]._V3_thread_position);
+							if (f_distance < _f_distance_aggro)
+							{
+								_boids[i]._boid_target = _team_enemy._boids[j];
+								_team_enemy._boids[j]._boid_target = _boids[i];
 
-
-						if (f_distance > 0 && f_distance < _f_distance_separation)
-						{
-							++i_nb_near_boids_separation;
-							V3_target_separation += (_boids[j]._V3_thread_position - _boids[i]._V3_thread_position).normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
-						}
-						
-						if (f_distance > 0 && f_distance < _f_distance_alignment)
-						{
-							++i_nb_near_boids_alignment;
-							V3_target_alignment += _boids[j]._V3_thread_velocity.normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
-						}
-						
-						if (f_distance > 0 && f_distance < _f_distance_aggregation)
-						{
-							++i_nb_near_boids_aggregation;
-							V3_target_aggregation += (_boids[i]._V3_thread_position - _boids[j]._V3_thread_position).normalized * (f_distance - _f_distance_aggregation) / _f_distance_aggregation;
+								_boids[i]._V3_thread_have_boid_target = true;
+								_team_enemy._boids[j]._V3_thread_have_boid_target = true;
+							}
 						}
 					}
-					
-					if (i_nb_near_boids_separation > 0)
-						V3_target_separation /= i_nb_near_boids_separation;
-					V3_target_separation.Normalize();
-					
-					if (i_nb_near_boids_alignment > 0)
-						V3_target_alignment /= i_nb_near_boids_alignment;
-					V3_target_alignment.Normalize();
-					
-					if (i_nb_near_boids_aggregation > 0)
-						V3_target_aggregation /= i_nb_near_boids_aggregation;
-					float f_distance_factor = Vector3.Distance(_boids[i]._V3_thread_position, V3_target_aggregation) / _f_distance_aggregation;
-					V3_target_aggregation -= _boids[i]._V3_thread_position;
-					V3_target_aggregation.Normalize();
-					V3_target_aggregation *= f_distance_factor;
-
-
-
-					Vector3 V3_target = Vector3.zero;
-					V3_target += V3_target_separation * _f_factor_separation;
-					V3_target += V3_target_alignment * _f_factor_alignment;
-					V3_target += V3_target_aggregation * _f_factor_aggregation;
-
-					if (V3_target.magnitude < 0.4f)
-						V3_target = Vector3.zero;
-					else
-						V3_target.Normalize();
-					_boids[i]._V3_target = V3_target;
 				}
+
+				Vector3 V3_target_separation = Vector3.zero;
+				Vector3 V3_target_alignment = Vector3.zero;
+				Vector3 V3_target_aggregation = Vector3.zero;
+
+				int i_nb_near_boids_separation = 0;
+				int i_nb_near_boids_alignment = 0;
+				int i_nb_near_boids_aggregation = 0;
+
+				for (int j = 0; j < _i_nb_boids; ++j)
+				{
+					float f_distance = Vector3.Distance(_boids[i]._V3_thread_position, _boids[j]._V3_thread_position);
+
+
+					if (f_distance > 0 && f_distance < _f_distance_separation)
+					{
+						++i_nb_near_boids_separation;
+						V3_target_separation += (_boids[j]._V3_thread_position - _boids[i]._V3_thread_position).normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
+					}
+					
+					if (f_distance > 0 && f_distance < _f_distance_alignment)
+					{
+						++i_nb_near_boids_alignment;
+						V3_target_alignment += _boids[j]._V3_thread_velocity.normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
+					}
+					
+					if (f_distance > 0 && f_distance < _f_distance_aggregation)
+					{
+						++i_nb_near_boids_aggregation;
+						V3_target_aggregation += (_boids[i]._V3_thread_position - _boids[j]._V3_thread_position).normalized * (f_distance - _f_distance_aggregation) / _f_distance_aggregation;
+					}
+				}
+				
+				if (i_nb_near_boids_separation > 0)
+					V3_target_separation /= i_nb_near_boids_separation;
+				V3_target_separation.Normalize();
+				
+				if (i_nb_near_boids_alignment > 0)
+					V3_target_alignment /= i_nb_near_boids_alignment;
+				V3_target_alignment.Normalize();
+				
+				if (i_nb_near_boids_aggregation > 0)
+					V3_target_aggregation /= i_nb_near_boids_aggregation;
+				float f_distance_factor = Vector3.Distance(_boids[i]._V3_thread_position, V3_target_aggregation) / _f_distance_aggregation;
+				V3_target_aggregation -= _boids[i]._V3_thread_position;
+				V3_target_aggregation.Normalize();
+				V3_target_aggregation *= f_distance_factor;
+
+
+
+				Vector3 V3_target = Vector3.zero;
+				V3_target += V3_target_separation * _f_factor_separation;
+				V3_target += V3_target_alignment * _f_factor_alignment;
+				V3_target += V3_target_aggregation * _f_factor_aggregation;
+
+				if (V3_target.magnitude < 0.4f)
+					V3_target = Vector3.zero;
+				else
+					V3_target.Normalize();
+				_boids[i]._V3_target = V3_target;
 			}
 		}
 
