@@ -123,6 +123,10 @@ Transition:
     m_ConditionEvent: Attack
     m_EventTreshold: 0
     m_ExitTime: .510800242
+  - m_ConditionMode: 2
+    m_ConditionEvent: Run
+    m_EventTreshold: 0
+    m_ExitTime: .510800242
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -363,6 +367,10 @@ Transition:
     m_ConditionEvent: Run
     m_EventTreshold: 0
     m_ExitTime: .981072545
+  - m_ConditionMode: 5
+    m_ConditionEvent: Run
+    m_EventTreshold: 0
+    m_ExitTime: .980000019
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -539,9 +547,11 @@ StateMachine:
       - {fileID: 110173282}
       - {fileID: 110141770}
     data:
-      first: {fileID: 110228994}
+      first: {fileID: 110211494}
       second:
-      - {fileID: 110138652}
+      - {fileID: 110104360}
+      - {fileID: 110128384}
+      - {fileID: 110100000}
     data:
       first: {fileID: 110220016}
       second:
@@ -552,18 +562,16 @@ StateMachine:
       - {fileID: 110108610}
       - {fileID: 110195062}
     data:
-      first: {fileID: 110211494}
+      first: {fileID: 110228994}
       second:
-      - {fileID: 110104360}
-      - {fileID: 110128384}
-      - {fileID: 110100000}
+      - {fileID: 110138652}
+    data:
+      first: {fileID: 110277944}
+      second: []
     data:
       first: {fileID: 110285130}
       second:
       - {fileID: 110116444}
-    data:
-      first: {fileID: 110277944}
-      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -360, y: -96, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
