@@ -3491,7 +3491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984d08bd6d919014da27bf0a68856aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _i_nb_boids: 150
+  _i_nb_boids: 100
   _Prefab_boid:
   - {fileID: 173350, guid: 547b1a000ddb94a02ae27b987b8f2ebe, type: 2}
   - {fileID: 197316, guid: 44951a104398b4214b49ca73d3bccc6d, type: 2}
@@ -3503,13 +3503,16 @@ MonoBehaviour:
   _f_x_range: 125
   _f_y_range: 50
   _f_distance_aggro: 10
-  _f_distance_separation: 3.5
+  _f_distance_separation: 4
   _f_factor_separation: 1
   _f_distance_alignment: 6
   _f_factor_alignment: 0
   _f_distance_aggregation: 9
   _f_factor_aggregation: 0
   _V3_destination: {x: 0, y: 0, z: 0}
+  _V3_center_of_mass: {x: 0, y: 0, z: 0}
+  _i_nb_boid_alive: 0
+  _b_is_fleeing: 0
 --- !u!4 &1387632380
 Transform:
   m_ObjectHideFlags: 0
@@ -4435,20 +4438,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984d08bd6d919014da27bf0a68856aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _i_nb_boids: 150
+  _i_nb_boids: 100
   _Prefab_boid:
   - {fileID: 174858, guid: 313bf72ca23cd4ad19027bf715dc2122, type: 2}
   _team_enemy: {fileID: 1387632379}
   _f_x_range: 100
   _f_y_range: 75
   _f_distance_aggro: 10
-  _f_distance_separation: 3.5
+  _f_distance_separation: 4
   _f_factor_separation: 1
   _f_distance_alignment: 6
   _f_factor_alignment: 0
   _f_distance_aggregation: 9
   _f_factor_aggregation: 0
   _V3_destination: {x: 0, y: 0, z: 0}
+  _V3_center_of_mass: {x: 0, y: 0, z: 0}
+  _i_nb_boid_alive: 0
+  _b_is_fleeing: 0
 --- !u!4 &1950639597
 Transform:
   m_ObjectHideFlags: 0

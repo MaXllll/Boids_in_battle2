@@ -1277,6 +1277,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 472104}
   - 95: {fileID: 9571936}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Manifestant6_Unity
   m_TagString: Untagged
@@ -2403,6 +2404,17 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bebca98cdc3dda46955ca3078d6a414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11471936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2420,8 +2432,9 @@ MonoBehaviour:
   _boids_team: {fileID: 0}
   _boid_target: {fileID: 0}
   _b_is_dead: 0
-  _f_max_speed: 12
-  _f_acceleration: 90
+  _i_nb_agressors: 0
+  _f_max_speed: 10
+  _f_acceleration: 50
   _i_nb_random_attack: 4
   _V3_target: {x: 0, y: 0, z: 0}
   _V3_thread_position: {x: 0, y: 0, z: 0}

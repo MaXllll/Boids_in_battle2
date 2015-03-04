@@ -10,8 +10,7 @@ public class SC_boids_team : MonoBehaviour {
 	private GameObject[] _Prefab_boid;
 	private SC_boid[] _boids;
 
-	[SerializeField]
-	private SC_boids_team _team_enemy;
+	public SC_boids_team _team_enemy;
 
 	[SerializeField]
 	private float _f_x_range = 20;
@@ -38,8 +37,13 @@ public class SC_boids_team : MonoBehaviour {
 
 	[HideInInspector]
 	public Vector3 _V3_destination = Vector3.zero;
-	private Vector3 _V3_center_of_mass = Vector3.zero;
+	[HideInInspector]
+	public Vector3 _V3_center_of_mass = Vector3.zero;
 	public Vector3 _V3_destination_direction { get { return _team_enemy._V3_center_of_mass - _V3_center_of_mass; } }
+	[HideInInspector]
+	public int _i_nb_boid_alive = 0;
+	[HideInInspector]
+	public bool _b_is_fleeing = false;
 
 	private bool _b_is_calcul_target_finish = true;
 
@@ -55,6 +59,7 @@ public class SC_boids_team : MonoBehaviour {
 			_boids[i].transform.parent = transform;
 			_boids[i].transform.localPosition = new Vector3(Random.value * _f_x_range - _f_x_range * 0.5f, 0f, Random.value * _f_y_range - _f_y_range * 0.5f);
 		}
+		_i_nb_boid_alive = _i_nb_boids;
 	}
 
 	void Update()
@@ -74,6 +79,15 @@ public class SC_boids_team : MonoBehaviour {
 			}
 			_V3_center_of_mass = V3_center_of_mass / i_nb_boids_actif;
 
+			if (!_b_is_fleeing && _i_nb_boid_alive < _i_nb_boids * 0.5f)
+			{
+				_b_is_fleeing = true;
+				for(int i = 0; i < _boids.Length; ++i)
+				{
+					_boids[i]._f_max_speed = 15;
+				}
+			}
+
 			_b_is_calcul_target_finish = false;
 			Thread thread = new Thread(UpdateBoidsTarget);
 			thread.Start();
@@ -90,16 +104,15 @@ public class SC_boids_team : MonoBehaviour {
 				{
 					for (int j = 0; j < _team_enemy._i_nb_boids; ++j)
 					{
-						if (!_team_enemy._boids[j]._V3_thread_have_boid_target && !_team_enemy._boids[j]._b_is_dead)
+						if (!_team_enemy._boids[j]._b_is_dead && _team_enemy._boids[j]._i_nb_agressors < 2)
 						{
 							float f_distance = Vector3.Distance(_boids[i]._V3_thread_position, _team_enemy._boids[j]._V3_thread_position);
 							if (f_distance < _f_distance_aggro)
 							{
 								_boids[i]._boid_target = _team_enemy._boids[j];
-								_team_enemy._boids[j]._boid_target = _boids[i];
+								_team_enemy._boids[j]._i_nb_agressors++;
 
 								_boids[i]._V3_thread_have_boid_target = true;
-								_team_enemy._boids[j]._V3_thread_have_boid_target = true;
 							}
 						}
 					}
@@ -115,25 +128,27 @@ public class SC_boids_team : MonoBehaviour {
 
 				for (int j = 0; j < _i_nb_boids; ++j)
 				{
-					float f_distance = Vector3.Distance(_boids[i]._V3_thread_position, _boids[j]._V3_thread_position);
+					if (!_boids[j]._b_is_dead)
+					{
+						float f_distance = Vector3.Distance(_boids[i]._V3_thread_position, _boids[j]._V3_thread_position);
 
-
-					if (f_distance > 0 && f_distance < _f_distance_separation)
-					{
-						++i_nb_near_boids_separation;
-						V3_target_separation += (_boids[j]._V3_thread_position - _boids[i]._V3_thread_position).normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
-					}
-					
-					if (f_distance > 0 && f_distance < _f_distance_alignment)
-					{
-						++i_nb_near_boids_alignment;
-						V3_target_alignment += _boids[j]._V3_thread_velocity.normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
-					}
-					
-					if (f_distance > 0 && f_distance < _f_distance_aggregation)
-					{
-						++i_nb_near_boids_aggregation;
-						V3_target_aggregation += (_boids[i]._V3_thread_position - _boids[j]._V3_thread_position).normalized * (f_distance - _f_distance_aggregation) / _f_distance_aggregation;
+						if (f_distance > 0 && f_distance < _f_distance_separation)
+						{
+							++i_nb_near_boids_separation;
+							V3_target_separation += (_boids[j]._V3_thread_position - _boids[i]._V3_thread_position).normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
+						}
+						
+						if (f_distance > 0 && f_distance < _f_distance_alignment)
+						{
+							++i_nb_near_boids_alignment;
+							V3_target_alignment += _boids[j]._V3_thread_velocity.normalized * (f_distance - _f_distance_separation) / _f_distance_separation;
+						}
+						
+						if (f_distance > 0 && f_distance < _f_distance_aggregation)
+						{
+							++i_nb_near_boids_aggregation;
+							V3_target_aggregation += (_boids[i]._V3_thread_position - _boids[j]._V3_thread_position).normalized * (f_distance - _f_distance_aggregation) / _f_distance_aggregation;
+						}
 					}
 				}
 				
@@ -151,8 +166,6 @@ public class SC_boids_team : MonoBehaviour {
 				V3_target_aggregation -= _boids[i]._V3_thread_position;
 				V3_target_aggregation.Normalize();
 				V3_target_aggregation *= f_distance_factor;
-
-
 
 				Vector3 V3_target = Vector3.zero;
 				V3_target += V3_target_separation * _f_factor_separation;
