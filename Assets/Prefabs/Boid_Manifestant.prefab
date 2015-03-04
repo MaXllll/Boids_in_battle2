@@ -36,26 +36,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 178830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49a6f217c77494942ab094b5a953ab45, type: 3}
+  m_Script: {fileID: 11500000, guid: d045852e541324299b3080bc946fb47b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _T_boid: {fileID: 486534, guid: d0525a9ca872140b79bdaa783f5eac06, type: 2}
-  _T_graphic: {fileID: 486534, guid: d0525a9ca872140b79bdaa783f5eac06, type: 2}
+  _T_boid: {fileID: 478830}
+  _T_graphic: {fileID: 478830}
   _A_T_Boid:
-  - {fileID: 486534, guid: d0525a9ca872140b79bdaa783f5eac06, type: 2}
-  - {fileID: 488204, guid: c72d194397b8c4560bf71534e9359f66, type: 2}
-  - {fileID: 497246, guid: 11c2c51b14ad64165ad7dd3b1403d455, type: 2}
-  - {fileID: 478006, guid: 1deaf64baf373421da2cfc7fe6baff55, type: 2}
-  - {fileID: 434928, guid: f0e080ce333cd49628b43a6c896d0286, type: 2}
-  - {fileID: 444780, guid: 3bdd38fb3dd7d45c18d51561ced4ca04, type: 2}
+  - {fileID: 486534, guid: a5a3546fa6c6f410cbcb6ee5a89fb709, type: 2}
+  - {fileID: 488204, guid: 032b47c9e839d46868cb2f6ad6845c23, type: 2}
+  - {fileID: 497246, guid: 275495ca2dcec4543b75dd477055e5d4, type: 2}
+  - {fileID: 478006, guid: 0e025a6efa321493f8d1f7f2390c1621, type: 2}
+  - {fileID: 434928, guid: bc3c48ba726814fc1b65178532d1d3ef, type: 2}
+  - {fileID: 444780, guid: 6cdbcfb92545a405d8262765a4a37999, type: 2}
   _A_T_graphic:
-  - {fileID: 486534, guid: d0525a9ca872140b79bdaa783f5eac06, type: 2}
-  - {fileID: 488204, guid: c72d194397b8c4560bf71534e9359f66, type: 2}
-  - {fileID: 497246, guid: 11c2c51b14ad64165ad7dd3b1403d455, type: 2}
-  - {fileID: 478006, guid: 1deaf64baf373421da2cfc7fe6baff55, type: 2}
-  - {fileID: 434928, guid: f0e080ce333cd49628b43a6c896d0286, type: 2}
-  - {fileID: 444780, guid: 3bdd38fb3dd7d45c18d51561ced4ca04, type: 2}
-  _animator: {fileID: 0}
+  - {fileID: 486534, guid: a5a3546fa6c6f410cbcb6ee5a89fb709, type: 2}
+  - {fileID: 488204, guid: 032b47c9e839d46868cb2f6ad6845c23, type: 2}
+  - {fileID: 497246, guid: 275495ca2dcec4543b75dd477055e5d4, type: 2}
+  - {fileID: 478006, guid: 0e025a6efa321493f8d1f7f2390c1621, type: 2}
+  - {fileID: 434928, guid: bc3c48ba726814fc1b65178532d1d3ef, type: 2}
+  - {fileID: 444780, guid: 6cdbcfb92545a405d8262765a4a37999, type: 2}
+  _animator: {fileID: 9586368, guid: a5a3546fa6c6f410cbcb6ee5a89fb709, type: 2}
   _boids_team: {fileID: 0}
   _boid_target: {fileID: 0}
   _i_hp: 20
@@ -63,7 +63,7 @@ MonoBehaviour:
   _b_attack_is_reloaded: 1
   _f_timer_attack: 0
   _b_is_dead: 0
-  _f_max_speed: 12
+  _f_max_speed: 1
   _f_acceleration: 5
   _V3_target: {x: 0, y: 0, z: 0}
   _V3_velocity: {x: 0, y: 0, z: 0}

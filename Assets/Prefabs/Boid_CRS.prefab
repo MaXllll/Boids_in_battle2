@@ -1330,7 +1330,7 @@ Animator:
   m_GameObject: {fileID: 139626}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 49a30f8e0dea03e4fa6e542a928c1338, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0573b44d022b8cb47acbf821433433d7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7ff38fb4c3eb548bf817d25ccb790d74, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1344,11 +1344,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 139624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea18ecd21bf432483911f2f845ff2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5351491aeeef6463e8b5fb9f04d1b004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _T_boid: {fileID: 439626}
-  _T_graphic: {fileID: 439626}
+  _T_boid: {fileID: 439624}
+  _T_graphic: {fileID: 439624}
   _A_T_Boid: []
   _A_T_graphic: []
   _animator: {fileID: 9539710}
@@ -1359,7 +1359,7 @@ MonoBehaviour:
   _b_attack_is_reloaded: 1
   _f_timer_attack: 0
   _b_is_dead: 0
-  _f_max_speed: 7
+  _f_max_speed: 1
   _f_acceleration: 5
   _V3_target: {x: 0, y: 0, z: 0}
   _V3_velocity: {x: 0, y: 0, z: 0}
