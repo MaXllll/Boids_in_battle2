@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 424200}
   - 33: {fileID: 3324200}
   - 23: {fileID: 2324200}
+  - 65: {fileID: 6566396}
   m_Layer: 0
   m_Name: concrete_block_wall_with_proxy_concrete_block_wall_med_messy
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124200}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.2999992, y: .600000024, z: 48.4000015}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: 13.8000002, y: 2.5, z: 160.300003}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,6 +58,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124200}
   m_Mesh: {fileID: 4300014, guid: 1c160f68ebaf718459fed228b8c857c4, type: 3}
+--- !u!65 &6566396
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .803943813, y: 2.33359098, z: 6.76118851}
+  m_Center: {x: 17.4570103, y: 1.15578151, z: -2.78896093}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

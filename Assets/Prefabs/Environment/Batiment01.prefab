@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409122}
   - 95: {fileID: 9509164}
+  - 65: {fileID: 6524934}
   m_Layer: 0
   m_Name: Appartement
   m_TagString: Untagged
@@ -375,7 +376,7 @@ Transform:
   m_GameObject: {fileID: 109122}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
   m_LocalPosition: {x: -5.0949707, y: -5.11437225, z: -41.9043808}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 75, y: 75, z: 75}
   m_Children:
   - {fileID: 409124}
   - {fileID: 409126}
@@ -645,8 +646,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.5949707, y: 7.11437225, z: 6.60438013}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
+  m_LocalPosition: {x: -61.4000015, y: 7.30000019, z: 156.399994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 409122}
@@ -1139,6 +1140,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109162}
   m_Mesh: {fileID: 4300016, guid: cf436cbf7888f58418d8657fb4384215, type: 3}
+--- !u!65 &6524934
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.20000005, y: .5, z: .800000012}
+  m_Center: {x: 0, y: .300000012, z: .400000006}
 --- !u!95 &9509164
 Animator:
   serializedVersion: 3
