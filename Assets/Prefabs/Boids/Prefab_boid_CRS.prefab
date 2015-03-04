@@ -1353,8 +1353,8 @@ MonoBehaviour:
   _boids_team: {fileID: 0}
   _boid_target: {fileID: 0}
   _b_is_dead: 0
-  _f_max_speed: 10
-  _f_acceleration: 20
+  _f_max_speed: 8
+  _f_acceleration: 60
   _i_nb_random_attack: 0
   _V3_target: {x: 0, y: 0, z: 0}
   _V3_thread_position: {x: 0, y: 0, z: 0}

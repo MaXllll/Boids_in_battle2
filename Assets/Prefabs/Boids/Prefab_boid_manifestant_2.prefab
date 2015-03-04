@@ -1862,7 +1862,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184856}
-  m_LocalRotation: {x: .000927119283, y: .0234058369, z: -.08658465, w: .995969057}
+  m_LocalRotation: {x: .000927119341, y: .0234058388, z: -.0865846574, w: .995969117}
   m_LocalPosition: {x: .155977339, y: 1.32935224e-06, z: 6.74247591e-09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2126,7 +2126,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184796}
-  m_LocalRotation: {x: .000927119283, y: .0234058369, z: -.08658465, w: .995969057}
+  m_LocalRotation: {x: .000927119341, y: .0234058388, z: -.0865846574, w: .995969117}
   m_LocalPosition: {x: -.155977428, y: 1.55101619e-16, z: -6.32827116e-17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2420,8 +2420,8 @@ MonoBehaviour:
   _boids_team: {fileID: 0}
   _boid_target: {fileID: 0}
   _b_is_dead: 0
-  _f_max_speed: 10
-  _f_acceleration: 20
+  _f_max_speed: 12
+  _f_acceleration: 90
   _i_nb_random_attack: 4
   _V3_target: {x: 0, y: 0, z: 0}
   _V3_thread_position: {x: 0, y: 0, z: 0}

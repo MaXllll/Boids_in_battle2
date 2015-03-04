@@ -58,6 +58,7 @@ public class SC_boid : MonoBehaviour {
 
 		if (_boid_target != null)
 		{
+			_T_boid.position += _V3_target.normalized * Time.deltaTime * 0.5f;
 			V3_velocity_target = _boid_target._T_boid.position - _T_boid.position;
 			_T_graphic.rotation = Quaternion.Lerp(_T_graphic.rotation, Quaternion.LookRotation(V3_velocity_target), Time.deltaTime * 4);
 
@@ -105,6 +106,10 @@ public class SC_boid : MonoBehaviour {
 				V3_velocity_target.Normalize();
 			}
 		}
+
+		Vector3 V3_avoid_obstacle = AvoidObstacles(V3_velocity_target);
+		if (V3_avoid_obstacle != Vector3.zero)
+			V3_velocity_target = V3_avoid_obstacle;
 
 		_V3_velocity = Vector3.MoveTowards(_V3_velocity, V3_velocity_target * _f_max_speed, _f_acceleration * Time.deltaTime);
 		_V3_velocity.y = 0f;
@@ -156,5 +161,68 @@ public class SC_boid : MonoBehaviour {
 			if (_animator != null)
 				_animator.SetBool("Attack", false);
 		}
+	}
+
+	private Vector3 AvoidObstacles(Vector3 V3_tmp_target)
+	{
+		RaycastHit hit;
+
+		if (_V3_velocity != Vector3.zero)
+		{
+			Vector3 V3_direction = _V3_velocity.normalized;
+			if (Physics.Raycast(_T_boid.position, V3_direction, out hit, 15))
+			{	
+				Vector3 V3_move;
+				Vector3 V3_projection_forward = ProjectVectorOnPlane(hit.normal, V3_direction);
+				V3_projection_forward.Normalize();
+				
+				if (Vector3.Dot(hit.normal, V3_tmp_target) > 0)
+				{
+					Vector3 V3_projection_normal = ProjectVectorOnPlane(-V3_direction, hit.normal);
+					
+					if (Vector3.Dot(V3_projection_normal, V3_tmp_target) > 0)
+					{
+						return Vector3.zero;
+					}
+					else
+					{
+						Vector3 V3_projection_target = ProjectVectorOnPlane(V3_projection_forward, V3_tmp_target);
+						V3_move = V3_projection_target.normalized;
+						V3_move += hit.normal;
+						V3_move.Normalize();
+						return V3_move;
+					}
+				}
+				else
+				{
+					Vector3 V3_projection_target = ProjectVectorOnPlane(hit.normal, V3_tmp_target);
+					V3_projection_target.Normalize();
+					
+					if (Vector3.Dot(V3_projection_forward, V3_tmp_target) > 0)
+					{
+						V3_move = V3_projection_target + hit.normal;
+						V3_move.Normalize();
+						
+						return V3_move;
+					}
+					else
+					{
+						V3_move = ProjectVectorOnPlane(V3_projection_forward, V3_projection_target).normalized;
+						V3_move += hit.normal;
+						V3_move.Normalize();
+						
+						return V3_move;
+						
+					}
+				}
+			}
+		}
+		
+		return Vector3.zero;
+	}
+
+	private Vector3 ProjectVectorOnPlane(Vector3 V3_normal, Vector3 V3_to_project){
+		
+		return V3_to_project - (Vector3.Dot(V3_to_project, V3_normal) * V3_normal);
 	}
 }

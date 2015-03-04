@@ -44,6 +44,26 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1101 &110100000
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110212966}
+  m_DstState: {fileID: 110201240}
+  m_TransitionDuration: .468749613
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Die
+    m_EventTreshold: 0
+    m_ExitTime: .531250358
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110101838
 Transition:
   serializedVersion: 2
@@ -512,6 +532,7 @@ StateMachine:
       second:
       - {fileID: 110179018}
       - {fileID: 110155170}
+      - {fileID: 110100000}
     data:
       first: {fileID: 110264420}
       second:
