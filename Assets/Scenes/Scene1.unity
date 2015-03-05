@@ -10504,7 +10504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984d08bd6d919014da27bf0a68856aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _i_nb_boids: 300
+  _i_nb_boids: 400
   _Prefab_boid:
   - {fileID: 173350, guid: 547b1a000ddb94a02ae27b987b8f2ebe, type: 2}
   - {fileID: 184748, guid: 1f58e2098372b41598cc7ba2df49b939, type: 2}

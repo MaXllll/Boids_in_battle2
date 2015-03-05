@@ -52,6 +52,14 @@ public class SC_boid : MonoBehaviour {
 	
 	GameObject this_molotov;
 
+	void Start() {
+		int rand = Random.Range(0,3);		
+		
+		if(rand == 1 || rand == 0)
+		{
+			_b_can_launch = false;
+		}
+	}
 
 	public void UpdateThreadInfo()
 	{
