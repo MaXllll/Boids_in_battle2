@@ -2431,6 +2431,7 @@ MonoBehaviour:
   _animator: {fileID: 9584748}
   _boids_team: {fileID: 0}
   _boid_target: {fileID: 0}
+  _b_can_launch: 1
   _b_is_dead: 0
   _i_nb_agressors: 0
   _f_max_speed: 10
@@ -2440,6 +2441,7 @@ MonoBehaviour:
   _V3_thread_position: {x: 0, y: 0, z: 0}
   _V3_thread_velocity: {x: 0, y: 0, z: 0}
   _V3_thread_have_boid_target: 0
+  prefab_molotov: {fileID: 111204, guid: 205c7f0a8929752409eb20645efcbe38, type: 2}
 --- !u!137 &13784748
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

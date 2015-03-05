@@ -7794,7 +7794,7 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: .75507021, g: .75507021, b: .75507021, a: 1}
-  m_Intensity: 1.62
+  m_Intensity: .5
   m_Range: 500
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -10523,6 +10523,9 @@ MonoBehaviour:
   _f_distance_aggregation: 9
   _f_factor_aggregation: 0
   _V3_destination: {x: 0, y: 0, z: 0}
+  _V3_center_of_mass: {x: 0, y: 0, z: 0}
+  _i_nb_boid_alive: 0
+  _b_is_fleeing: 0
 --- !u!4 &1122148018
 Transform:
   m_ObjectHideFlags: 0
@@ -19019,7 +19022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 984d08bd6d919014da27bf0a68856aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _i_nb_boids: 300
+  _i_nb_boids: 100
   _Prefab_boid:
   - {fileID: 174858, guid: 313bf72ca23cd4ad19027bf715dc2122, type: 2}
   _team_enemy: {fileID: 1122148017}
@@ -19033,6 +19036,9 @@ MonoBehaviour:
   _f_distance_aggregation: 9
   _f_factor_aggregation: 0
   _V3_destination: {x: 0, y: 0, z: 0}
+  _V3_center_of_mass: {x: 0, y: 0, z: 0}
+  _i_nb_boid_alive: 0
+  _b_is_fleeing: 0
 --- !u!4 &1921728861
 Transform:
   m_ObjectHideFlags: 0

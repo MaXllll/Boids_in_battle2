@@ -20,7 +20,7 @@ public class SC_boid : MonoBehaviour {
 	private float _f_timer_attack = 0;
 	[SerializeField]
 	private bool  _b_can_launch = false;
-	private float _f_launch_delay = 1.5f;
+	private float _f_launch_delay = 200.5f;
 	private bool _b_launch_is_reloaded = true;
 	private float _f_timer_launch = 0;
 	[HideInInspector]
@@ -47,6 +47,11 @@ public class SC_boid : MonoBehaviour {
 	[HideInInspector]
 	public bool _V3_thread_have_boid_target;
 
+	[SerializeField]
+	GameObject prefab_molotov;
+	
+	GameObject this_molotov;
+
 
 	public void UpdateThreadInfo()
 	{
@@ -62,6 +67,20 @@ public class SC_boid : MonoBehaviour {
 			return;
 
 		Vector3 V3_velocity_target = Vector3.zero;
+		
+		if (_b_can_launch && _b_launch_is_reloaded)
+		{
+			//TODO: Valentin, do your shit here !
+			var distance = Vector3.Distance (_T_boid.position, _boids_team._team_enemy._V3_center_of_mass);
+			
+			if(distance < 150)
+			{
+				launch_molotov(_T_boid);
+				
+				_b_launch_is_reloaded = false;
+				_f_timer_launch = _f_launch_delay;
+			}
+		}
 
 		if (_boids_team._b_is_fleeing)
 		{
@@ -69,26 +88,28 @@ public class SC_boid : MonoBehaviour {
 			V3_velocity_target += _V3_target;
 			V3_velocity_target.Normalize();
 		}
+		
+		
 		else if (_boid_target != null)
 		{
 			_T_boid.position += _V3_target.normalized * Time.deltaTime * 0.5f;
 			V3_velocity_target = _boid_target._T_boid.position - _T_boid.position;
+
+			
+
 			_T_graphic.rotation = Quaternion.Lerp(_T_graphic.rotation, Quaternion.LookRotation(V3_velocity_target), Time.deltaTime * 4);
 
-			if (V3_velocity_target.sqrMagnitude < 16)
+			if (V3_velocity_target.sqrMagnitude < 12)
 				V3_velocity_target = Vector3.zero;
 			else
 				V3_velocity_target.Normalize();
 
-			if (_b_can_launch && _b_attack_is_reloaded && V3_velocity_target != Vector3.zero)
-			{
+			
 				
-				//TODO: Valentin, do your shit here !
 				
-				_b_launch_is_reloaded = false;
-				_f_timer_launch = _f_launch_delay;
-			}
-			else if (_b_attack_is_reloaded && V3_velocity_target == Vector3.zero)
+			
+
+			if (_b_attack_is_reloaded && V3_velocity_target == Vector3.zero)
 			{
 				StartCoroutine(PlayAttackAnim());
 
@@ -261,5 +282,12 @@ public class SC_boid : MonoBehaviour {
 	private Vector3 ProjectVectorOnPlane(Vector3 V3_normal, Vector3 V3_to_project){
 		
 		return V3_to_project - (Vector3.Dot(V3_to_project, V3_normal) * V3_normal);
+	}
+
+	public void launch_molotov(Transform manif){
+		this_molotov = Instantiate(prefab_molotov, manif.position,Quaternion.identity)as GameObject;
+	
+		this_molotov.rigidbody.AddForce((_boids_team._V3_destination_direction * 10.0f) + new Vector3(0,1000,0));
+		Destroy(this_molotov, 25.0f);
 	}
 }
