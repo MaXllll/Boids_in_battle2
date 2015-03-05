@@ -18,6 +18,11 @@ public class SC_boid : MonoBehaviour {
 	private float _f_attack_delay = 1.5f;
 	private bool _b_attack_is_reloaded = true;
 	private float _f_timer_attack = 0;
+	[SerializeField]
+	private bool  _b_can_launch = false;
+	private float _f_launch_delay = 1.5f;
+	private bool _b_launch_is_reloaded = true;
+	private float _f_timer_launch = 0;
 	[HideInInspector]
 	public bool _b_is_dead = false;
 
@@ -70,25 +75,30 @@ public class SC_boid : MonoBehaviour {
 			V3_velocity_target = _boid_target._T_boid.position - _T_boid.position;
 			_T_graphic.rotation = Quaternion.Lerp(_T_graphic.rotation, Quaternion.LookRotation(V3_velocity_target), Time.deltaTime * 4);
 
-			if (V3_velocity_target.magnitude < 4)
+			if (V3_velocity_target.sqrMagnitude < 16)
 				V3_velocity_target = Vector3.zero;
 			else
 				V3_velocity_target.Normalize();
-			
-			if (_b_attack_is_reloaded)
+
+			if (_b_can_launch && _b_attack_is_reloaded && V3_velocity_target != Vector3.zero)
 			{
-				if (V3_velocity_target == Vector3.zero)
-				{
-					StartCoroutine(PlayAttackAnim());
+				
+				//TODO: Valentin, do your shit here !
+				
+				_b_launch_is_reloaded = false;
+				_f_timer_launch = _f_launch_delay;
+			}
+			else if (_b_attack_is_reloaded && V3_velocity_target == Vector3.zero)
+			{
+				StartCoroutine(PlayAttackAnim());
 
-					int i_damage = Random.Range(1,5);
-					bool b_target_is_dead = _boid_target.Damage(i_damage);
-					if (b_target_is_dead)
-						_boid_target = null;
+				int i_damage = Random.Range(1,5);
+				bool b_target_is_dead = _boid_target.Damage(i_damage);
+				if (b_target_is_dead)
+					_boid_target = null;
 
-					_b_attack_is_reloaded = false;
-					_f_timer_attack = _f_attack_delay;
-				}
+				_b_attack_is_reloaded = false;
+				_f_timer_attack = _f_attack_delay;
 			}
 		}
 		else if (_boids_team != null)
@@ -130,6 +140,16 @@ public class SC_boid : MonoBehaviour {
 			{
 				_b_attack_is_reloaded = true;
 				_f_timer_attack = 0;
+			}
+		}
+
+		if (!_b_launch_is_reloaded)
+		{
+			_f_timer_launch -= Time.deltaTime;
+			if (_f_timer_launch <= 0)
+			{
+				_b_launch_is_reloaded = true;
+				_f_timer_launch = 0;
 			}
 		}
 	}
